@@ -10,4 +10,16 @@ $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#sidebar-wrapper").toggleClass("active");
 })
+
+$(window).scroll(function(e) {
+    console.log($(window).scrollTop());
+    if($(window).scrollTop() > 425) {
+        $("#wrap").addClass("fix-title");
+    }
+    else {
+        $("#wrap").removeClass("fix-title");
+    }
+
+});
+
 </script>

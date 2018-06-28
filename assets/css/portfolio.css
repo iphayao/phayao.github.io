@@ -14,6 +14,23 @@ body {
     }
 }
 
+.wrap {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.title {
+    height: 150px;
+}
+
+.fix-title .title {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+}
+
 .hello {
     color: #e0e1e2;
     background-color: rgba(26,124,240,0.6);
@@ -27,8 +44,8 @@ body {
     text-decoration: none;
 }
 
-.test {
-    
+.fix-title .hello {
+    background-color: rgba(0,0,0,0);
 }
 
 .text-vertical-center {
@@ -107,6 +124,10 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.fix-title .btn-dark {
+    visibility: hidden;
+}
+
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -164,7 +185,20 @@ body {
     background: none;
 }
 
-.header {
+.top-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #222;
+}
+
+.fix-title .top-header {
+    background-color: rgba(26,124,240,0.9);
+}
+
+.cover {
     display: table;
     position: relative;
     width: 100%;
@@ -175,6 +209,10 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
+
+.cover .hide-backgroud {
+    background: none;
+} 
 
 .about {
     padding: 50px 0;
